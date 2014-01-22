@@ -1,2 +1,5 @@
---- Doppelkopf
-- Hinten sind die ENten fett.
+Doppelkopf
+==========
+
+Hinten sind die Enten fett.
+---------------------------
