@@ -10,7 +10,8 @@ class GamesController < ApplicationController
 
   def new
     @game = Game.new
-    4.times { @game.participations.build }
+    users = User.all
+    users.each { |user| @game.participations.build(user: user) }
   end
 
   def edit
