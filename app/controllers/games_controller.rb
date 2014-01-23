@@ -15,6 +15,7 @@ class GamesController < ApplicationController
   # GET /games/new
   def new
     @game = Game.new
+    4.times { @game.participations.build }
   end
 
   # GET /games/1/edit

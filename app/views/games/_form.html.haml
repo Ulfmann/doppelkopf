@@ -5,6 +5,8 @@
       %ul
         - @game.errors.full_messages.each do |msg|
           %li= msg
-
+  = f.fields_for :participations do |builder|
+    %p= builder.label :user_id, 'User'
+    %p= builder.text_field :user_id
   .actions
     = f.submit 'Save'
